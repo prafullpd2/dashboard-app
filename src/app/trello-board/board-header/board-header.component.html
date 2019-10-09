@@ -1,0 +1,12 @@
+<div class="board-header">
+  <div class="left-content">
+    <div class="icon-text board-name  icon-container display-inline-block"><span>Board name ...</span></div>
+    <div class="star icon-container display-inline-block bright text-middle"><span class="star-icon icon text-middle"></span></div>
+  </div>
+  <div class="right-content">
+    <div class="icon-container bright show-menu " (click)="showMenuClick()"> <span class="dots"></span><span>Show Menu</span></div>
+  </div>
+  <div *ngIf="showMenu|async" class="menu-container">
+    <app-menu></app-menu>
+  </div>
+</div>

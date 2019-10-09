@@ -1,0 +1,58 @@
+.board-header{
+  height: 40px;
+  width: 100%;
+  display: flex;
+  /*margin-top: 4px;*/
+  padding: 8px 4px 4px 8px;
+  justify-content: space-between;
+  position: relative;
+}
+.star-icon:before{
+  content: "\E95C";
+}
+.bright{
+  background-color: hsla(0,0%,100%,.3);
+}
+.left-content, .right-content{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.icon-text{
+height: unset;
+}
+.icon-text span{
+  font-size: 20px;
+  font-weight: 700;
+}
+.board-name{
+  margin: 0 4px 0 4px;
+  padding: 0 16px;
+  width: unset;
+  display: flex;
+  align-items: center;
+  height: 32px;
+}
+.show-menu {
+  height: 32px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: unset;
+}
+.show-menu *{
+  font-size: 16px;
+}
+.dots{
+  margin-right: 4px;
+}
+.dots:before{
+  content: "\E94B";
+}
+.menu-container{
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 50;
+}

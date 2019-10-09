@@ -1,0 +1,23 @@
+<div class="board-list-canvas">
+<!--
+  <div class="list-container">
+
+  </div>
+-->
+
+  <div class="list-container">
+    <div class="list" >
+      <app-list *ngFor="let list of lists | async; let i = index " [list]="list" [listIndex]="i"></app-list>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+

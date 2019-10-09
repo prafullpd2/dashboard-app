@@ -1,0 +1,39 @@
+<div class="list-container" (contextmenu)="onListContextMenuClick($event, i)" >
+  <div class="list-item">
+    <div class="list-name-container">
+      <textarea name="list-name" id="list-name" (change)="onListNameChange($event)" [formControl]="listName"  maxlength="512" class="list-name" rows="1"></textarea>
+    </div>
+    <div class="cards-container">
+<!--      <div class="cards">
+        <div class="card">
+          <span class="card-name">
+            saldasl ad lasdlasjdlkja sldkasldjasl jdlasj d;lasjdlkajs lk asljdlasjdlkas jldjasd
+            aslkjdlkasjldkkjasldjasldj asldjals
+          </span>
+        </div>
+      </div>-->
+      <div class="cards">
+        <div class="card" *ngFor="let card of list?.cards; let i = index;" (contextmenu)="onCardContextMenuClick($event, i)">
+          <span class="card-name" >
+            {{card.name}}
+          </span>
+        </div>
+      </div>
+
+      <div *ngIf="showAddNewCard" class="new-card card">
+        <div class="card new-card-info">
+          <textarea name="new-card" [formControl]="newCardText" id="new-card" maxlength="512" class=" list-name new-card-name" rows="3"></textarea>
+        </div>
+        <div class="new-card-actions">
+          <button class="save-new-card btn btn-green" (click)="saveCard()">Save</button> <a class="icon cross-icon" (click)="discardNewCard()"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="add-card " (click)="addCard($event)">
+      <span class="add-card-icon display-inline-block icon text-middle"></span>
+      <span class="add-card-text">Add another card</span>
+    </div>
+  </div>
+
+</div>

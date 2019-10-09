@@ -1,0 +1,15 @@
+.board-main-content{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+
+}
+.board-container{
+  /*flex-grow: 1;*/
+  /*--------------*/
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-x: auto;
+  padding-top: 4px;
+}

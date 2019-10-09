@@ -1,0 +1,84 @@
+.master-header{
+  min-height: 40px;
+  height: 32px;
+  position: relative;
+  background: rgba(0,0,0,.15);
+  overflow: hidden;
+  padding: 4px;
+  z-index: 10;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.left-content, .right-content{
+  display: flex;
+}
+
+.bright{
+  background-color: hsla(0,0%,100%,.3);
+}
+.icon{
+  display: inline-block;
+  height: 32px;
+  font-size: 20px;
+  line-height: 32px;
+}
+.home{
+  /*background: rgba(0,0,0,.15);*/
+  height: 32px;
+  width: 32px;
+  border-radius: 3px;
+  margin-right: 4px;
+}
+.home-icon{
+  width: 32px;
+}
+.home-icon:before{
+  content: '\E933';
+}
+.board{
+  height: 32px;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.board-icon{
+  height: 32px;
+  width: 32px;
+  padding: 0 3px;
+
+}
+.board-icon:before{
+  content: "\E90A";
+}
+.icon-text{
+  line-height: 32px;
+  padding: 0 8px 0 2px;
+  font-weight: 700;
+  font-size: 14px;
+  height: 100%;
+}
+.create-board{
+  width: 32px;
+}
+.create-board-icon:before{
+  content: "\E901";
+}
+.trello span{
+  font-size: 30px;
+  opacity: 0.5;
+}
+.user{
+  background-color: #dfe1e6;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.user-text{
+  color: #222222;
+  font-size: 16px;
+  font-weight: 600;
+}
